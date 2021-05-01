@@ -1,0 +1,28 @@
+{
+  "name": "VEMCODE",
+  "version": "1.0.0",
+  "description": "simple web application with node and vue",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app",
+    "clients-install": "npm install --prefix clients",
+    "start": "node app.js",
+    "clients": "npm run serve --prefix clients",
+    "dev": "concurrently \"npm run server\" \"npm run clients\""
+  },
+  "keywords": [],
+  "author": "Tunji Ayodeji",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
